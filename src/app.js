@@ -1,11 +1,30 @@
 /* eslint-disable */
 import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+import "./styles.css";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  document.querySelectorAll(".color").forEach(item => {
+    item.addEventListener("mousedown", event => {
+      event.currentTarget.classList.add("pressed");
+    });
+    item.addEventListener("mouseup", event => {
+      event.currentTarget.classList.remove("pressed");
+    });
+    item.addEventListener("mouseleave", event => {
+      event.currentTarget.classList.remove("pressed");
+    });
+
+    item.addEventListener("click", event => {
+      const colorCode = event.currentTarget.getAttribute("data-color");
+      navigator.clipboard.writeText(colorCode).then(
+        function() {
+          console.log("Color code copied to clipboard:", colorCode);
+          // You can add a visual indication here if needed
+        },
+        function(err) {
+          console.error("Unable to copy color code to clipboard", err);
+        }
+      );
+    });
+  });
 };

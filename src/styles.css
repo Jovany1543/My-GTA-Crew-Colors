@@ -1,0 +1,68 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.color {
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.pressed {
+  /* Add your pressed button style here */
+  opacity: 0.6;
+  /* Example: Reducing opacity to make it look pressed */
+}
+
+.pale-green {
+  background-color: #363d21;
+}
+
+.glow-red {
+  background-color: #ff0000;
+}
+
+.nolan-blue {
+  background-color: #122746;
+}
+
+.carrera-blue {
+  background-color: #1e2b47;
+}
+
+.midnight-purple {
+  background-color: #120b16;
+}
+
+.galaxy-purple {
+  background-color: #3503ff;
+}
+
+.dragon-fruit {
+  background-color: #c52943;
+}
+
+.trippy-green {
+  background-color: #00ff7f;
+}
+
+.orange-rx7 {
+  background-color: #fb4e17;
+}
+
+.orange-370 {
+  background-color: #ec2103ff;
+}
+
+.blood-orange {
+  background-color: #d31a02;
+}
+
+.bright-green {
+  background-color: #6beb34;
+}
+
+.whispering-lilac {
+  background-color: #dad4ff;
+}
