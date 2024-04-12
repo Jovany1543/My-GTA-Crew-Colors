@@ -1,5 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
+html,
+body {
+  height: 100%;
+}
+body {
+  background-image: url(https://i.ibb.co/tD3qrCf/5cec1c96-6807-449b-b317-5e9adf55ea9b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: white;
+  height: 100%;
+}
 .color {
   width: 250px;
   height: 100px;
@@ -52,7 +64,7 @@
 }
 
 .orange-370 {
-  background-color: #ec2103ff;
+  background-color: #ec2103;
 }
 
 .blood-orange {
@@ -65,4 +77,8 @@
 
 .whispering-lilac {
   background-color: #dad4ff;
+}
+
+.off-white {
+  background-color: #dad3c6;
 }
