@@ -1,17 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 html,
 body {
   height: 100%;
 }
+
 body {
   background-image: url(https://i.ibb.co/tD3qrCf/5cec1c96-6807-449b-b317-5e9adf55ea9b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
   background-color: white;
-  height: 100%;
+  /* height: 100%; */
+  min-height: fit-content;
 }
+
 .color {
   width: 200px;
   height: 125px;
@@ -43,8 +48,12 @@ body {
   background-color: #1e2b47;
 }
 
-.midnight-purple {
+.shadowed-plum {
   background-color: #120b16;
+}
+
+.midnight-purple {
+  background-color: #0e0117;
 }
 
 .galaxy-purple {
@@ -81,4 +90,29 @@ body {
 
 .off-white {
   background-color: #dad3c6;
+}
+
+.yellow1 {
+  background-color: #ffff00;
+}
+
+.blue1 {
+  background-color: #0000ff;
+}
+
+.aqua {
+  background-color: #00ffff;
+}
+
+.aquamarine {
+  background-color: #7fffd4;
+}
+
+.chrome-yellow {
+  background-color: #ffa700;
+}
+
+.sandy-yellow {
+  background-color: #ffeead;
+  /* Changed to the new color */
 }
