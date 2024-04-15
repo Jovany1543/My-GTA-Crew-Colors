@@ -119,3 +119,15 @@ body {
   background-color: #ffeead;
   /* Changed to the new color */
 }
+
+.online-red {
+  background-color: #ca0000;
+}
+
+.chicago-bulls-red {
+  background-color: #ce1141;
+}
+
+.pure-black {
+  background-color: #000000;
+}
