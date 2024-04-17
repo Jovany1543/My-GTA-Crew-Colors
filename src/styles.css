@@ -132,6 +132,10 @@ body {
   background-color: #000000;
 }
 
-.spy-green {
+.spy-dark-green {
   background-color: #212823;
+}
+
+.spy-green {
+  background-color: #516357;
 }
