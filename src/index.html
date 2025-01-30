@@ -40,14 +40,12 @@
             <p>Color Code: #ca0000</p>
           </button>
         </div>
-
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color dragon-fruit btn" data-color="#C52943">
             <h4>Dragon Fruit</h4>
             <p>Color Code: #C52943</p>
           </button>
         </div>
-
         <!-- Orange -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color blood-orange btn" data-color="#d31a02">
@@ -56,18 +54,18 @@
           </button>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color orange-rx7 btn" data-color="#fb4e17EE">
+          <button class="color orange-rx7 btn" data-color="#fb4e17">
             <h4>Orange Rx7</h4>
             <p>Color Code: #fb4e17</p>
           </button>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color orange-370 btn" data-color="#ec2103FF">
+          <button class="color orange-370 btn" data-color="#ec2103">
             <h4>370 Orange</h4>
-            <p>Color Code: #ec2103FF</p>
+            <p>Color Code: #ec2103</p>
           </button>
         </div>
-        <!--Yellow-->
+        <!-- Yellow -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color yellow1 btn" data-color="#ffff00">
             <h4>Yellow 1</h4>
@@ -80,14 +78,12 @@
             <p>Color Code: #ffa700</p>
           </button>
         </div>
-
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color sandy-yellow btn" data-color="#ffeead">
             <h4>Sandy Yellow</h4>
             <p>Color Code: #ffeead</p>
           </button>
         </div>
-
         <!-- Green -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color trippy-green btn" data-color="#00FF7F">
@@ -99,31 +95,6 @@
           <button class="color bright-green btn" data-color="#6beb34">
             <h4>Bright Green</h4>
             <p>Color Code: #6beb34</p>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color pale-green btn" data-color="#363d21">
-            <h4>Pale Green</h4>
-            <p>Color Code: #363d21</p>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color spy-dark-green btn" data-color="#212823">
-            <h4>Spy Family Dark Green</h4>
-            <p>Color Code: #212823</p>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color spy-green btn" data-color="#516357">
-            <h4>Spy Family Green</h4>
-            <p>Color Code: #516357</p>
-          </button>
-        </div>
-        <!--Teal-->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color dark-teal btn" data-color="#123c46">
-            <h4>Dark Teal</h4>
-            <p>Color Code: #123c46</p>
           </button>
         </div>
         <!-- Blue -->
@@ -139,25 +110,6 @@
             <p>Color Code: #00ffff</p>
           </button>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color aquamarine btn" data-color="#7fffd4">
-            <h4>Aqua Marine</h4>
-            <p>Color Code: #7fffd4</p>
-          </button>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color nolan-blue btn" data-color="#122746">
-            <h4>Nolan Blue</h4>
-            <p>Color Code: #122746</p>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color carrera-blue btn" data-color="#1e2b47">
-            <h4>Carrera Blue</h4>
-            <p>Color Code: #1e2b47</p>
-          </button>
-        </div>
         <!-- Purple -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <button class="color midnight-purple btn" data-color="#0e0117">
@@ -165,33 +117,43 @@
             <p>Color Code: #0e0117</p>
           </button>
         </div>
+        <!-- White -->
         <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color shadowed-plum btn" data-color="#120b16">
-            <h4>Shadowed Plum</h4>
-            <p>Color Code: #120b16</p>
-          </button>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color galaxy-purple btn" data-color="#3503FF">
-            <h4>Galaxy Purple</h4>
-            <p>Color Code: #3503FF</p>
-          </button>
-        </div>
-        <!-- Lilac -->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color whispering-lilac btn" data-color="#dad4ff00">
-            <h4>Whispering Lilac</h4>
-            <p>Color Code: #dad4ff</p>
-          </button>
-        </div>
-        <!--White-->
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <button class="color off-white btn" data-color="#dad3c600">
+          <button class="color off-white btn" data-color="#dad3c6">
             <h4>Off-white</h4>
             <p>Color Code: #dad3c6</p>
           </button>
         </div>
       </div>
     </div>
+
+    <script>
+      window.onload = function() {
+        document.querySelectorAll(".color").forEach(item => {
+          item.addEventListener("mousedown", event => {
+            event.currentTarget.classList.add("pressed");
+          });
+          item.addEventListener("mouseup", event => {
+            event.currentTarget.classList.remove("pressed");
+          });
+          item.addEventListener("mouseleave", event => {
+            event.currentTarget.classList.remove("pressed");
+          });
+
+          item.addEventListener("click", event => {
+            const colorCode = event.currentTarget.getAttribute("data-color");
+            navigator.clipboard.writeText(colorCode).then(
+              function() {
+                console.log("Color code copied to clipboard:", colorCode);
+                alert(`Copied: ${colorCode}`); // Visual feedback
+              },
+              function(err) {
+                console.error("Unable to copy color code to clipboard", err);
+              }
+            );
+          });
+        });
+      };
+    </script>
   </body>
 </html>
